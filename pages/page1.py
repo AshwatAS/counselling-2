@@ -63,3 +63,4 @@ grades = {}
 for subject in selected_subjects:
     grades[subject] = st.slider(f"What was your percentage in {subject}?", 1, 100, step=1)
 
+st.progress(progress_bar_val*20,f"Step {progress_bar_val + 1} of 5")
