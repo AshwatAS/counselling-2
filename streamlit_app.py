@@ -17,5 +17,6 @@ with st.form("user_base_form"):
   
 if submit_button_bool:
   progress_bar_val+=1
+  st.switch_page("pages/page1.py")
   
 st.progress(progress_bar_val*20,f"Step {progress_bar_val + 1} of 5")
