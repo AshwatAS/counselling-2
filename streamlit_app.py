@@ -10,7 +10,7 @@ st.title('Counselling App')
 
 st.info('Form 1')
 
-if "progress_bar_val" not in st.session_state:
+if progress_bar_val not in st.session_state:
     st.session_state.progress_bar_val = 0
 
 with st.form("user_base_form"):
