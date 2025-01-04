@@ -4,7 +4,7 @@ st.title('Counselling App')
 
 st.info('Form 1')
 
-progress_bar_val=-1
+progress_bar_val=0
 
 with st.form("user_base_form"):
   user_name=st.text_input("Enter your name: ")
@@ -14,4 +14,4 @@ with st.form("user_base_form"):
 if submit_button_bool:
   progress_bar_val+=1
   
-st.progress(progress_bar_val*33,f"Step {progress_bar_val + 1} of 3")
+st.progress(progress_bar_val*20,f"Step {progress_bar_val + 1} of 3")
