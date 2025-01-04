@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+#Page configuration
+st.set_page_config(page_title="Second form")
+
 # Title and Introduction
 st.title('Hello! Welcome to Career Compass')
 st.info("We help you decide what you should study in the future with the help of our large datasets and accurate algorithms.")
