@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Base form",menu_items={
+st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu_items={
         'Get Help': 'https://www.youtube.com/',
         'Report a bug': "https://www.youtube.com/",
         'About': "# This is a header. This is an *extremely* cool app!"})
