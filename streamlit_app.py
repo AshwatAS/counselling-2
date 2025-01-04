@@ -4,7 +4,7 @@ st.title('Counselling App')
 
 st.info('Form 1')
 
-int progress_bar_val=-1
+progress_bar_val=-1
 
 with st.form("user_base_form"):
   user_name=st.text_input("Enter your name: ")
