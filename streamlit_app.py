@@ -6,12 +6,12 @@ st.set_page_config(page_title="Base form",menu_items={
         'About': "# This is a header. This is an *extremely* cool app!"})
 
 
-
 st.title('Counselling App')
 
 st.info('Form 1')
 
-progress_bar_val=0
+if "progress_bar_val" not in st.session_state:
+    st.session_state.my_variable = 0
 
 with st.form("user_base_form"):
   user_name=st.text_input("Enter your name: ")
