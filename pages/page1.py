@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 #Page configuration
-st.set_page_config(page_title="Second form")
+#st.set_page_config(page_title="Second form")
 
 # Title and Introduction
 st.title('Hello! Welcome to Career Compass')
