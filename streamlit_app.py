@@ -13,7 +13,7 @@ st.info('Form 1')
 progress_bar_val=0
 
 if progress_bar_val not in st.session_state:
-    st.session_state.progress_bar_val = 0
+    st.session_state.progress_bar_val = 1
 
 with st.form("user_base_form"):
   user_name=st.text_input("Enter your name: ")
