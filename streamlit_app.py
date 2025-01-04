@@ -14,4 +14,4 @@ with st.form("user_base_form"):
 if submit_button_bool:
   progress_bar_val+=1
   
-st.progress(progress_bar_val+33,f"Step {progress_bar_val + 1} of 5")
+st.progress(progress_bar_val*33,f"Step {progress_bar_val + 1} of 3")
