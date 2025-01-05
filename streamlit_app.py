@@ -32,7 +32,7 @@ if user_soe=="Secondary":
         user_eb=st.selectbox("What is your board of education?",["ICSE","CBSE","International","SSC","Others"],None)
 elif user_soe=="Higher Secondary":
         user_ey=st.selectbox("Which grade?",["11th","12th"])
-        user_eb=st.selectbox("Which exam are you currently preparing/appearing for?",["IB Diploma","A-Levels","JEE Mains","BITSAT","Others"])
+        user_eb=st.selectbox("Which exam are you currently preparing/appearing for?",["IB Diploma","A-Levels","JEE Mains","BITSAT","Others"],None)
 else:
         user_ey=st.selectbox("Which year?",["1st year","2nd year","3rd year","4th year"])
         
@@ -57,7 +57,7 @@ if user_age not in st.session_state:
 
 if submit_button_bool:
         #Checking if all required fields are filled
-        if not user_name or not user_gender:
+        if not user_name or not user_gender or not user_soe or not user_eb:
                 st.error("Please fill in all required fields.")
         else:       
           progress_bar_val+=1
