@@ -11,7 +11,7 @@ st.title('Counselling App')
 
 st.info('Form 1')
 
-#initialisation of variables
+#initialisation of important variables
 progress_bar_val=0
 today_date=datetime.date.today()
 user_age=0
@@ -24,6 +24,7 @@ if progress_bar_val not in st.session_state:
 with st.form("user_base_form"):
         user_name=st.text_input("Enter your name: ",placeholder="Ex: Patrick Junes")
 #user_age=st.number_input("Enter your age: ",min_value=15,step=1)
+        user_gender = st.selectbox("What is your gender?", ["Male","Female","Others"])
         user_DOB = st.date_input("When's your birthday",format="DD.MM.YYYY",min_value=datetime.date(today_date.year-23,1,1),max_value=datetime.date(today_date.year-14,12,31))
         submit_button_bool=st.form_submit_button("Next",type="primary")
 
@@ -44,7 +45,8 @@ if user_age not in st.session_state:
 
 
 if submit_button_bool:
-        if not user_name:
+        #Checking if all required fields are filled
+        if not user_name or not user_gender:
                 st.error("Please fill in all required fields.")
         else:       
           progress_bar_val+=1
