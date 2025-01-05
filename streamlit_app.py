@@ -12,14 +12,15 @@ st.title('Counselling App')
 st.info('Form 1')
 
 progress_bar_val=0
-
+today_date=datetime.date.today()
+st.write(today_date)
 if progress_bar_val not in st.session_state:
     st.session_state.progress_bar_val = 1
 
 with st.form("user_base_form"):
   user_name=st.text_input("Enter your name: ",placeholder="Ex: Patrick Junes")
   #user_age=st.number_input("Enter your age: ",min_value=15,step=1)
-  user_DOB = st.date_input("When's your birthday", datetime.date(2019, 7, 6))
+  user_DOB = st.date_input("When's your birthday",format="DD.MM.YYYY")
   submit_button_bool=st.form_submit_button("Next",type="primary")
   
 if submit_button_bool:
