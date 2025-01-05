@@ -1,4 +1,5 @@
 import streamlit as st
+import datetime
 
 st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu_items={
         'Get Help': 'https://www.youtube.com/',
@@ -17,7 +18,8 @@ if progress_bar_val not in st.session_state:
 
 with st.form("user_base_form"):
   user_name=st.text_input("Enter your name: ")
-  user_age=st.number_input("Enter your age: ",min_value=15,step=1)
+  #user_age=st.number_input("Enter your age: ",min_value=15,step=1)
+  user_DOB = st.date_input("When's your birthday", datetime.date(2019, 7, 6))
   submit_button_bool=st.form_submit_button("Next",type="primary")
   
 if submit_button_bool:
