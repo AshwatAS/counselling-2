@@ -30,7 +30,7 @@ with st.form("user_base_form"):
         #EB=education board, SOE=Status of Education,EY=education year
         user_soe=st.selectbox("What is your current year of education?",["Secondary","Higher Secondary","Undergraduate"],None)
         if user_soe:
-                
+                st.write("Hello")
                 if user_soe=="Secondary":
                         user_ey=st.selectbox("Which grade?",["9th","10th"])
         
