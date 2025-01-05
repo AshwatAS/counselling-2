@@ -29,7 +29,6 @@ with st.form("user_base_form"):
         
         #EB=education board, SOE=Status of Education,EY=education year
         user_soe=st.selectbox("What is your current year of education?",["Secondary","Higher Secondary","Undergraduate"],None)
-        st.write(str(user_soe))
         # if user_soe not in st.session_state:
         #         st.session_state.user_soe = user_soe
         # if user_soe != st.session_state.user_soe:
@@ -41,6 +40,7 @@ with st.form("user_base_form"):
         submit_button_bool=st.form_submit_button("Next",type="primary")
 
 #Logic to calculate age of the user
+st.write(str(user_soe))
 if today_date.month<user_DOB.month:
         user_age=today_date.year-user_DOB.year-1
 elif today_date.month>user_DOB.month:
