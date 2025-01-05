@@ -44,8 +44,11 @@ if user_age not in st.session_state:
 
 
 if submit_button_bool:
-  progress_bar_val+=1
-  st.switch_page("pages/page1.py")
+        if not name:
+                st.error("Please fill in all required fields.")
+        else:       
+          progress_bar_val+=1
+          st.switch_page("pages/page1.py")
 
 #updating progress bar
 st.progress(progress_bar_val*20,f"Step {progress_bar_val + 1} of 5")
