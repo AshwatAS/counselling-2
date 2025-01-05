@@ -33,7 +33,7 @@ if user_soe=="Secondary":
 elif user_soe=="Higher Secondary":
         user_ey=st.selectbox("Which grade?",["11th","12th"])
         user_eb=st.selectbox("Which exam are you currently preparing/appearing for?",["IB Diploma","A-Levels","JEE Mains","BITSAT","Others"],None)
-else:
+elif user_soe=="Undergraduate":
         user_ey=st.selectbox("Which year?",["1st year","2nd year","3rd year","4th year"])
 #A fake value initialised because undergraduates do not have an education board
         user_eb="None"
