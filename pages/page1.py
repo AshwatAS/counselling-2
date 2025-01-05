@@ -69,6 +69,6 @@ selected_subjects = st.multiselect("Select the subjects you are good at:", subje
 grades = {}
 for subject in selected_subjects:
     grades[subject] = st.slider(f"What was your percentage in {subject}?", 1, 100, step=1)
-back_button_bool=st.button("Back",on_click=st.switch_page(streamlit_app.py))
+back_button_bool=st.button("Back",on_click=st.switch_page(../streamlit_app.py))
 
 st.progress(progress_bar_val*20,f"Step {progress_bar_val + 1} of 5")
