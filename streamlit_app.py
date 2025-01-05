@@ -24,14 +24,14 @@ with st.form("user_base_form"):
         submit_button_bool=st.form_submit_button("Next",type="primary")
 
 if today_date.month<user_DOB.month:
-        user_age=today_date.year-user_DOB.year
-elif today_date.month>user_DOB.month:
         user_age=today_date.year-user_DOB.year-1
+elif today_date.month>user_DOB.month:
+        user_age=today_date.year-user_DOB.year
 else:
         if user_DOB.day<=today_date.day:
-                user_age=today_date.year-user_DOB.year-1
-        else:
                 user_age=today_date.year-user_DOB.year
+        else:
+                user_age=today_date.year-user_DOB.year-1
 st.write(user_age)
 if submit_button_bool:
   progress_bar_val+=1
