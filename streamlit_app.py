@@ -38,7 +38,7 @@ if user_soe=="Secondary":
         user_ey=st.selectbox("Which grade?",["9th","10th"])
         
 user_eb=st.selectbox("What is your board of education?",["ICSE","CBSE","International","SSC","Others"],None)
-        submit_button_bool=st.button("Next",type="primary")
+submit_button_bool=st.button("Next",type="primary")
 
 #Logic to calculate age of the user
 st.write(str(user_soe))
