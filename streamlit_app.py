@@ -35,6 +35,8 @@ elif user_soe=="Higher Secondary":
         user_eb=st.selectbox("Which exam are you currently preparing/appearing for?",["IB Diploma","A-Levels","JEE Mains","BITSAT","Others"],None)
 else:
         user_ey=st.selectbox("Which year?",["1st year","2nd year","3rd year","4th year"])
+#A fake value initialised because undergraduates do not have an education board
+        user_eb="None"
         
 #the submit button
 submit_button_bool=st.button("Next",type="primary")
