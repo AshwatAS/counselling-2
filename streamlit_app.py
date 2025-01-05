@@ -29,7 +29,7 @@ with st.form("user_base_form"):
         
         #EB=education board, SOE=Status of Education,EY=education year
         user_soe=st.selectbox("What is your current year of education?",["Secondary","Higher Secondary","Undergraduate"],None)
-        st.write(type(user_soe))
+        st.write(str(user_soe))
         # if user_soe not in st.session_state:
         #         st.session_state.user_soe = user_soe
         # if user_soe != st.session_state.user_soe:
