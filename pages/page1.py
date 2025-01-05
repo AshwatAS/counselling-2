@@ -11,9 +11,10 @@ user_age=st.session_state.user_age
 
 # Title and Introduction
 st.title('Hello! Welcome to Career Compass')
-st.info("We help you decide what you should study in the future with the help of our large datasets and accurate algorithms.")
+st.info("Form 2")
 
-st.write(user_age)
+#testing
+#st.write(user_age)
 
 # User Inputs
 st.subheader("Try and answer as accurately as possible! These questions are helping you, not deciding your future.")
