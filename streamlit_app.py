@@ -35,7 +35,7 @@ elif today_date.month>user_DOB.month:
 else:
         if user_DOB.day<=today_date.day:
                 user_age=today_date.year-user_DOB.year
-        else:
+        elif user_DOB.day>today_date.day:
                 user_age=today_date.year-user_DOB.year-1
 
 #making the variable accessible in all pages
