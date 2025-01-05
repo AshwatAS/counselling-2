@@ -44,7 +44,7 @@ if user_age not in st.session_state:
 
 
 if submit_button_bool:
-        if not name:
+        if not user_name:
                 st.error("Please fill in all required fields.")
         else:       
           progress_bar_val+=1
