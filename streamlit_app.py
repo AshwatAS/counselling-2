@@ -20,7 +20,7 @@ if progress_bar_val not in st.session_state:
 with st.form("user_base_form"):
   user_name=st.text_input("Enter your name: ",placeholder="Ex: Patrick Junes")
   #user_age=st.number_input("Enter your age: ",min_value=15,step=1)
-  user_DOB = st.date_input("When's your birthday",format="DD.MM.YYYY",max_value=datetime.date(1,1,today_date.year-14))
+  user_DOB = st.date_input("When's your birthday",format="DD.MM.YYYY",max_value=datetime.date(today_date.year-14,1,1))
   submit_button_bool=st.form_submit_button("Next",type="primary")
   
 if submit_button_bool:
