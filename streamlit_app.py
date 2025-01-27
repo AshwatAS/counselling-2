@@ -11,6 +11,7 @@ if response.status_code == 200:
     st.info(cities[1])  # Print the list of cities
 else:
     pass
+    st.info("hi")
     #st.info("Error:", response.status_code, response.text)
 
 
