@@ -12,14 +12,15 @@ url = "https://gist.githubusercontent.com/anubhavshrimal/4aeb195a743d0cdd1c3806c
 
 try:
     # Fetch the data
-    response = requests.get(url)
+        response = requests.get(url)
     #response.raise_for_status()  # Raise an exception for HTTP errors
     
     # Parse the JSON data
-    data = response.json()
-    st.info(data)
+        data = response.json()
+        all_cities = [city for cities in data.values() for city in cities]
+        st.info(all_cities)
 except:
-    st.info(f"An error occurred")
+        st.info(f"An error occurred")
 
 
 st.title('Counselling App')
