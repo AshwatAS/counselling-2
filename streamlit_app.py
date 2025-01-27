@@ -1,5 +1,17 @@
 import streamlit as st
 import datetime
+import requests
+
+url = 'https://indian-cities-api-nocbegfhqg.now.sh/cities'
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    cities = response.json()
+    st.info(cities[1])  # Print the list of cities
+else:
+    st.info("Error:", response.status_code, response.text)
+
 
 st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu_items={
         'Get Help': 'https://www.youtube.com/',
