@@ -8,7 +8,7 @@ st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu
 
 
 
-url = "https://indian-cities-api-nocbegfhqg.now.sh/cities"
+url = "https://gist.githubusercontent.com/anubhavshrimal/4aeb195a743d0cdd1c3806c9c222ed45/raw/181a34db4fcb8b37533b7c8b9c489b6c01573158/Indian_Cities_In_States_JSON"
 
 try:
     # Fetch the data
