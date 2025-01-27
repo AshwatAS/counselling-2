@@ -50,7 +50,7 @@ passion_areas = ["Automobiles", "Business Strategy", "Creative Arts", "Education
                  "History & Culture", "Politics", "Science & Research", "Social Work", 
                  "Space Exploration", "Sports", "Technology", "Travel"]
 
-subjects = ["Accounting", "Anthropology", "Archaeology", "Architecture", "Art", "Biology", 
+subjects = ["Anthropology", "Archaeology", "Architecture", "Art", "Biology", 
             "Business Studies", "Chemistry", "Computer Science", "Data Science", "Economics", 
             "Engineering", "English", "Environmental Science", "Ethics", "Geography", 
             "History", "Law", "Linguistics", "Literature", "Mathematics", "Media Studies", 
