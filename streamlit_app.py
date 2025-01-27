@@ -19,7 +19,7 @@ try:
     data = response.json()
     st.info(data)
 except:
-    st.info(f"An error occurred: {error}")
+    st.info(f"An error occurred")
 
 
 st.title('Counselling App')
