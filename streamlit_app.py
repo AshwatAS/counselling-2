@@ -1,6 +1,11 @@
 import streamlit as st
 import datetime
 import requests
+st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu_items={
+        'Get Help': 'https://www.youtube.com/',
+        'Report a bug': "https://www.youtube.com/",
+        'About': "# This is a header. This is an *extremely* cool app!"})
+
 
 url = 'https://indian-cities-api-nocbegfhqg.now.sh/cities'
 
@@ -13,13 +18,6 @@ else:
     #pass
     st.info("hi")
     #st.info("Error:", response.status_code, response.text)
-
-
-st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu_items={
-        'Get Help': 'https://www.youtube.com/',
-        'Report a bug': "https://www.youtube.com/",
-        'About': "# This is a header. This is an *extremely* cool app!"})
-
 
 st.title('Counselling App')
 
