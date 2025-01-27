@@ -18,6 +18,8 @@ try:
     # Parse the JSON data
     data = response.json()
     st.info(data)
+except:
+    st.info(f"An error occurred: {error}")
 
 
 st.title('Counselling App')
