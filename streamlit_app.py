@@ -7,9 +7,17 @@ st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu
         'About': "# This is a header. This is an *extremely* cool app!"})
 
 
-import requests
-response = requests.get('https://api.api-ninjas.com/v1/city?country=IN', headers={'X-Api-Key': 'PaQ7QQR8zWxBZrJLhh2/bQ==cwrlEClj7xvbTg2g'})
-st.info(response.json())
+
+url = "https://indian-cities-api-nocbegfhqg.now.sh/cities"
+
+try:
+    # Fetch the data
+    response = requests.get(url)
+    #response.raise_for_status()  # Raise an exception for HTTP errors
+    
+    # Parse the JSON data
+    data = response.json()
+    st.info(data)
 
 
 st.title('Counselling App')
