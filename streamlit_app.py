@@ -22,7 +22,7 @@ if progress_bar_val not in st.session_state:
 
 #All the inputs taken from the user
 user_name=st.text_input("Enter your name: ",placeholder="Ex: Patrick Junes")
-user_gender = st.selectbox("What is your gender?", ["Male","Female"],None)
+user_gender = st.selectbox("What is your gender?", ["Male","Female","B"],None)
 user_DOB = st.date_input("When's your birthday",format="DD.MM.YYYY",min_value=datetime.date(today_date.year-23,1,1),max_value=datetime.date(today_date.year-14,12,31))
         
 #EB=education board, SOE=Status of Education,EY=education year
