@@ -39,7 +39,10 @@ user_name=st.text_input("Enter your name: ",placeholder="Ex: Patrick Junes")
 user_city=st.selectbox("Which city are you studying in?",all_cities,None)
 user_gender = st.selectbox("What is your gender?", ["Male","Female"],None)
 user_DOB = st.date_input("When's your birthday",format="DD.MM.YYYY",min_value=datetime.date(today_date.year-23,1,1),max_value=datetime.date(today_date.year-14,12,31))
-        
+user_category=st.selectbox("Which category are you from?",["SC","OBC","ST","General"],None)
+user_father_qualification=st.selectbox("What is your father's qualification?",["CA","IIT","MBA","MBBS","IPS","IAS"])
+user_mother_qualification=st.selectbox("What is your mother's qualification?",["CA","IIT","MBA","MBBS","IPS","IAS"])
+
 #EB=education board, SOE=Status of Education,EY=education year
 user_soe=st.selectbox("What is your current year of education?",["Secondary","Higher Secondary","Undergraduate"],None)
 if user_soe=="Secondary":
