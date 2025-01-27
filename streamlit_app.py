@@ -6,19 +6,17 @@ st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu
         'Report a bug': "https://www.youtube.com/",
         'About': "# This is a header. This is an *extremely* cool app!"})
 
-
-
+#Code for API of Indian Cities
+#Github URL for accessing all cities in India
 url = "https://gist.githubusercontent.com/anubhavshrimal/4aeb195a743d0cdd1c3806c9c222ed45/raw/181a34db4fcb8b37533b7c8b9c489b6c01573158/Indian_Cities_In_States_JSON"
 
 try:
     # Fetch the data
-        response = requests.get(url)
-    #response.raise_for_status()  # Raise an exception for HTTP errors
-    
+        response = requests.get(url)    
     # Parse the JSON data
         data = response.json()
+        #list for all indian cities
         all_cities = [city for cities in data.values() for city in cities]
-        st.info(all_cities)
 except:
         st.info(f"An error occurred")
 
@@ -38,6 +36,7 @@ if progress_bar_val not in st.session_state:
 
 #All the inputs taken from the user
 user_name=st.text_input("Enter your name: ",placeholder="Ex: Patrick Junes")
+user_city=st.selectbox("Which city are you studying in?",all_cities,None)
 user_gender = st.selectbox("What is your gender?", ["Male","Female"],None)
 user_DOB = st.date_input("When's your birthday",format="DD.MM.YYYY",min_value=datetime.date(today_date.year-23,1,1),max_value=datetime.date(today_date.year-14,12,31))
         
