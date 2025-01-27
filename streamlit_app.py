@@ -9,7 +9,7 @@ st.set_page_config(page_title="Base form",initial_sidebar_state="collapsed",menu
 
 import requests
 response = requests.get('https://api.api-ninjas.com/v1/city?country=IN', headers={'X-Api-Key': 'PaQ7QQR8zWxBZrJLhh2/bQ==cwrlEClj7xvbTg2g'})
-print(response.json())
+st.info(response.json())
 
 
 st.title('Counselling App')
