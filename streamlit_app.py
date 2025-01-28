@@ -23,7 +23,7 @@ except:
 
 st.title('Counselling App')
 
-st.info('Form 1')
+st.info('Regiatration Form')
 
 #initialisation of important variables
 progress_bar_val=0
