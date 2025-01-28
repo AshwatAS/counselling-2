@@ -19,7 +19,7 @@ preferred_environment = st.radio(
     ["Teaching and Training", "Remote/Work from Home", "On-site Industrial Work", 
      "Desk Job", "Fieldwork", "Research Lab", "Creative Studio"],None
 )
-st.write("You selected",preferred_environment)
+st.write("You selected:",preferred_environment)
 # salary_expect = st.slider("How much annual income do you expect from your job in the future? (INR)", 400000, 1250000, step=50000)
 # time_filter = st.slider("Maximum Years to Land a Job", 3, 8, step=1)
 
