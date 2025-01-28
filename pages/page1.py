@@ -19,4 +19,7 @@ st.title('Your Registration is successful. Welcome to CounselDirect')
 st.subheader("Now you are ready for Assesment, Please click Submit for answering some of the assessment questions.")
 # back_button_bool=st.button("Back",on_click=st.switch_page("streamlit_app.py"))
 
+#the submit button
+submit_button_bool=st.button("Next",type="primary")
+
 st.progress(progress_bar_val*20,f"Step {progress_bar_val + 1} of 5")
