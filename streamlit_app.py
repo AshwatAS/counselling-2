@@ -50,7 +50,7 @@ if user_soe=="Secondary":
         user_eb=st.selectbox("What is your board of education?",["ICSE","CBSE","International","SSC","Others"],None)
 elif user_soe=="Higher Secondary":
         user_ey=st.selectbox("Which grade?",["11th","12th"])
-        user_eb=st.selectbox("Which exam are you currently preparing/appearing for?",["IB Diploma","A-Levels","JEE Mains","BITSAT","Others"],None)
+        user_eb=st.selectbox("If you are currently preparing/appearing for any of the following Exams, Please select?",["IB Diploma","A-Levels","JEE Mains","BITSAT","Others"],None)
 elif user_soe=="Undergraduate":
         user_ey=st.selectbox("Which year?",["1st year","2nd year","3rd year","4th year"])
 #A fake value initialised because undergraduates do not have an education board
