@@ -16,7 +16,7 @@ st.title('Your Registration is successful. Welcome to CounselDirect')
 #st.write(user_age)
 
 # User Inputs
-st.subheader("Now you are ready for Assesment Please click Submit for answering some of the assessment questions.")
+st.subheader("Now you are ready for Assesment, Please click Submit for answering some of the assessment questions.")
 preferred_environment = st.selectbox(
     "What is your preferred work environment?",
     ["Teaching and Training", "Remote/Work from Home", "On-site Industrial Work", 
