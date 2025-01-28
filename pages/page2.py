@@ -15,7 +15,7 @@ user_age=st.session_state.user_age
 # User Inputs
 st.subheader("What is your preferred work environment")
 preferred_environment = st.radio(
-    "What is your preferred work environment?",
+    " ",
     ["Teaching and Training", "Remote/Work from Home", "On-site Industrial Work", 
      "Desk Job", "Fieldwork", "Research Lab", "Creative Studio"],None
 )
