@@ -20,7 +20,7 @@ st.subheader("Now you are ready for Assesment, Please click Submit for answering
 # back_button_bool=st.button("Back",on_click=st.switch_page("streamlit_app.py"))
 
 #the submit button
-submit_button_bool=st.button("Next",type="primary")
+submit_button_bool=st.button("Submit",type="primary")
 
 if submit_button_bool:       
           progress_bar_val+=1
