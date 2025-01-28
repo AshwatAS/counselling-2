@@ -11,13 +11,12 @@ user_age=st.session_state.user_age
 
 # Title and Introduction
 st.title('Your Registration is successful. Welcome to CounselDirect')
-st.info("Form 2")
 
 #testing
 #st.write(user_age)
 
 # User Inputs
-st.subheader("Try and answer as accurately as possible! These questions are helping you, not deciding your future.")
+st.subheader("Now you are ready for Assesment Please click Submit for answering some of the assessment questions.")
 preferred_environment = st.selectbox(
     "What is your preferred work environment?",
     ["Teaching and Training", "Remote/Work from Home", "On-site Industrial Work", 
