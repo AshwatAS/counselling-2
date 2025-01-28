@@ -21,9 +21,9 @@ except:
         st.info(f"An error occurred")
 
 
-st.title('Counselling App')
+st.title('CounselDirect')
 
-st.info('Regiatration Form')
+st.info('Registration Form')
 
 #initialisation of important variables
 progress_bar_val=0
