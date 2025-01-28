@@ -10,7 +10,7 @@ progress_bar_val = st.session_state.progress_bar_val
 user_age=st.session_state.user_age
 
 # Title and Introduction
-st.title('Hello! Welcome to Career Compass')
+st.title('Your Registration is successful. Welcome to CounselDirect')
 st.info("Form 2")
 
 #testing
