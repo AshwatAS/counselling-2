@@ -22,4 +22,9 @@ st.subheader("Now you are ready for Assesment, Please click Submit for answering
 #the submit button
 submit_button_bool=st.button("Next",type="primary")
 
+if submit_button_bool:       
+          progress_bar_val+=1
+          st.switch_page("pages/page2.py")
+
+#updating progress bar
 st.progress(progress_bar_val*20,f"Step {progress_bar_val + 1} of 5")
