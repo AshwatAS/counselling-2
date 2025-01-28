@@ -9,9 +9,6 @@ import numpy as np
 progress_bar_val = st.session_state.progress_bar_val
 user_age=st.session_state.user_age
 
-# Title and Introduction
-st.title('Your Registration is successful. Welcome to CounselDirect')
-
 #testing
 #st.write(user_age)
 
