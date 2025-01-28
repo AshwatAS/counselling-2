@@ -13,12 +13,13 @@ user_age=st.session_state.user_age
 #st.write(user_age)
 
 # User Inputs
-st.subheader("Now you are ready for Assesment, Please click Submit for answering some of the assessment questions.")
-preferred_environment = st.selectbox(
+st.subheader("What is your preferred work environment")
+preferred_environment = st.radio(
     "What is your preferred work environment?",
     ["Teaching and Training", "Remote/Work from Home", "On-site Industrial Work", 
-     "Desk Job", "Fieldwork", "Research Lab", "Creative Studio"]
+     "Desk Job", "Fieldwork", "Research Lab", "Creative Studio"],None
 )
+st.info("You selected",preferred_environment)
 # salary_expect = st.slider("How much annual income do you expect from your job in the future? (INR)", 400000, 1250000, step=50000)
 # time_filter = st.slider("Maximum Years to Land a Job", 3, 8, step=1)
 
